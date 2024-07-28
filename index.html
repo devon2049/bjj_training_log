@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jiu Jitsu Training Log</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Jiu Jitsu Training Log</h1>
+    <form id="log-form">
+        <label for="date">Date:</label>
+        <input type="date" id="date" required><br>
+
+        <label for="techniques">Techniques Practiced:</label><br>
+        <textarea id="techniques" rows="4" cols="50" required></textarea><br>
+
+        <label for="progress">Progress:</label><br>
+        <textarea id="progress" rows="4" cols="50" required></textarea><br>
+
+        <label for="goals">Goals:</label><br>
+        <textarea id="goals" rows="4" cols="50" required></textarea><br>
+
+        <button type="submit">Add Entry</button>
+    </form>
+
+    <h2>Training Log</h2>
+    <ul id="log-entries"></ul>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
